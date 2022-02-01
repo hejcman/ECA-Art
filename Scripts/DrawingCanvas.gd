@@ -2,6 +2,7 @@ extends Control
 
 var _current_row = 0
 var _color_button_path = "../../../PanelContainer/HBoxContainer/Rule"
+var _play_button_path = "../../../PanelContainer/HBoxContainer/Play"
 var _system_viewport_path = "../../../.."
 
 var img = Image.new()
@@ -25,6 +26,7 @@ func _increment_row():
 	_current_row = (_current_row + 1) % int(img.get_size().y)
 	if _current_row == 0:
 		get_node(_system_viewport_path).playing = get_node(_system_viewport_path).continuous
+		get_node(_play_button_path).pressed = false
 
 
 func _update_texture():

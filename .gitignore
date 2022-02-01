@@ -6,6 +6,9 @@ export_presets.cfg
 # Imported translations (automatically generated from CSV files)
 *.translation
 
+# Cache
+.DS_Store
+
 # Mono-specific ignores
 .mono/
 data_*/

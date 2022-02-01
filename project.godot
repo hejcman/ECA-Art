@@ -14,6 +14,8 @@ config/name="ECA Art"
 config/description="Art generator using Elementary Cellular Automata."
 run/main_scene="res://MainWindow.tscn"
 config/icon="res://Assets/icon.png"
+config/macos_native_icon="res://Assets/icon.icns"
+config/windows_native_icon="res://Assets/icon.ico"
 
 [display]
 
