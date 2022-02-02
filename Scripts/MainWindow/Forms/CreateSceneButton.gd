@@ -21,6 +21,6 @@ func _button_pressed():
 			img_width,
 			img_height,
 			img_background,
-			img_path
+			img_path + "/" + scene_name + ".png"
 		)
 		get_node("../..").hide()

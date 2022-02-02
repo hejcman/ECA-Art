@@ -217,13 +217,16 @@ clip_text = true
 script = ExtResource( 3 )
 
 [node name="FileDialog" type="FileDialog" parent="PanelContainer/VBoxContainer/TabContainer/WindowDialog/VBoxContainer/HBoxContainer/Form"]
-margin_top = 108.0
+margin_top = 132.0
 margin_right = 416.0
-margin_bottom = 292.0
-rect_min_size = Vector2( 400, 140 )
+margin_bottom = 316.0
+rect_min_size = Vector2( 600, 400 )
+rect_clip_content = true
 popup_exclusive = true
+window_title = "Save Location"
 resizable = true
 dialog_hide_on_ok = true
+mode = 2
 access = 2
 current_dir = "/Users/lukashejcman/Documents/Development/ECAArt"
 current_path = "/Users/lukashejcman/Documents/Development/ECAArt/"
@@ -243,4 +246,5 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="file_selected" from="PanelContainer/VBoxContainer/TabContainer/WindowDialog/VBoxContainer/HBoxContainer/Form/FileDialog" to="PanelContainer/VBoxContainer/TabContainer/WindowDialog/VBoxContainer/HBoxContainer/Form/FileDialogButton" method="_on_FileDialog_file_selected"]
+[connection signal="dir_selected" from="PanelContainer/VBoxContainer/TabContainer/WindowDialog/VBoxContainer/HBoxContainer/Form/FileDialog" to="PanelContainer/VBoxContainer/TabContainer/WindowDialog/VBoxContainer/HBoxContainer/Form/FileDialogButton" method="_on_FileDialog_selected"]
+[connection signal="file_selected" from="PanelContainer/VBoxContainer/TabContainer/WindowDialog/VBoxContainer/HBoxContainer/Form/FileDialog" to="PanelContainer/VBoxContainer/TabContainer/WindowDialog/VBoxContainer/HBoxContainer/Form/FileDialogButton" method="_on_FileDialog_selected"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Scripts/DrawingCanvas.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/Rules.gd" type="Script" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Scripts/RuleOptionButton.gd" type="Script" id=4]
 [ext_resource path="res://Scripts/ViewportCamera.gd" type="Script" id=5]
 [ext_resource path="res://Scripts/ViewportContainer.gd" type="Script" id=6]
+[ext_resource path="res://Scripts/ExportInfoLabel.gd" type="Script" id=7]
 
 [node name="SystemViewport" type="Control"]
 anchor_right = 1.0
@@ -164,37 +165,39 @@ text = "Treshold"
 
 [node name="TresholdSlider" type="HSlider" parent="VBoxContainer/PanelContainer/HBoxContainer"]
 margin_left = 671.0
-margin_right = 1024.0
+margin_right = 998.0
 margin_bottom = 16.0
 hint_tooltip = "The threshold of color at which the cell should be considered alive."
 size_flags_horizontal = 3
 max_value = 1.0
 step = 0.01
 value = 0.5
+tick_count = 25
+ticks_on_borders = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="VSeparator3" type="VSeparator" parent="VBoxContainer/PanelContainer/HBoxContainer"]
-margin_left = 1028.0
-margin_right = 1032.0
+margin_left = 1002.0
+margin_right = 1006.0
 margin_bottom = 24.0
 
 [node name="SpeedLabel" type="Label" parent="VBoxContainer/PanelContainer/HBoxContainer"]
-margin_left = 1036.0
+margin_left = 1010.0
 margin_top = 5.0
-margin_right = 1075.0
+margin_right = 1101.0
 margin_bottom = 19.0
-text = "Speed"
+text = "Iteration Time"
 
 [node name="SpeedSlider" type="HSlider" parent="VBoxContainer/PanelContainer/HBoxContainer"]
-margin_left = 1079.0
+margin_left = 1105.0
 margin_right = 1432.0
 margin_bottom = 16.0
 hint_tooltip = "The speed of iteration."
 size_flags_horizontal = 3
 min_value = 0.001
-max_value = 5.0
+max_value = 2.0
 step = 0.001
 value = 0.05
 exp_edit = true
@@ -265,14 +268,25 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="ExportInfo" type="Label" parent="VBoxContainer/ViewportContainer/HBoxContainer"]
+margin_top = 3.0
+margin_bottom = 17.0
+script = ExtResource( 7 )
+
+[node name="Timer" type="Timer" parent="VBoxContainer/ViewportContainer/HBoxContainer/ExportInfo"]
+wait_time = 5.0
+one_shot = true
+
 [node name="ScreenshotButton" type="Button" parent="VBoxContainer/ViewportContainer/HBoxContainer"]
 visible = false
-margin_right = 83.0
+margin_left = 131.0
+margin_right = 214.0
 margin_bottom = 20.0
 text = "Screenshot"
 
 [node name="SaveButton" type="Button" parent="VBoxContainer/ViewportContainer/HBoxContainer"]
-margin_right = 52.0
+margin_left = 4.0
+margin_right = 56.0
 margin_bottom = 20.0
 text = "Export"
 
@@ -290,5 +304,6 @@ text = "Export"
 [connection signal="move_end" from="VBoxContainer/ViewportContainer/Viewport/ViewportCamera" to="VBoxContainer/ViewportContainer" method="_on_ViewportCamera_move_end"]
 [connection signal="move_start" from="VBoxContainer/ViewportContainer/Viewport/ViewportCamera" to="VBoxContainer/ViewportContainer" method="_on_ViewportCamera_move_start"]
 [connection signal="timeout" from="VBoxContainer/ViewportContainer/Viewport/DrawingCanvas/Timer" to="VBoxContainer/ViewportContainer/Viewport/DrawingCanvas" method="_on_Timer_timeout"]
+[connection signal="timeout" from="VBoxContainer/ViewportContainer/HBoxContainer/ExportInfo/Timer" to="VBoxContainer/ViewportContainer/HBoxContainer/ExportInfo" method="_on_Timer_timeout"]
 [connection signal="pressed" from="VBoxContainer/ViewportContainer/HBoxContainer/ScreenshotButton" to="." method="_save_screenshot"]
 [connection signal="pressed" from="VBoxContainer/ViewportContainer/HBoxContainer/SaveButton" to="." method="_export_canvas"]

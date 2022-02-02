@@ -84,6 +84,9 @@ func _save_screenshot():
 func _export_canvas():
 	var img = self.get_node("VBoxContainer/ViewportContainer/Viewport/DrawingCanvas").get_texture().get_data()
 	img.save_png(path)
+	var label = self.get_node("VBoxContainer/ViewportContainer/HBoxContainer/ExportInfo")
+	label.text = "Image saved as '" + path + "'"
+	label.get_node("Timer").start()
 
 
 func _on_Continue_toggled(button_pressed):
