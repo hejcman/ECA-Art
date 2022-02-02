@@ -55,6 +55,7 @@ Download the relevant binary for your system from the [release page](https://git
   <img src="https://github.com/hejcman/ECA-Art/blob/master/Assets/canvases/BleedingFractal.png" width=50% height=50%>
   <img src="https://github.com/hejcman/ECA-Art/blob/master/Assets/canvases/Dungeon.png" width=50% height=50%>
   <img src="https://github.com/hejcman/ECA-Art/blob/master/Assets/canvases/LeeningColumn.png" width=50% height=50%>
+  <img src="https://github.com/hejcman/ECA-Art/blob/master/Assets/canvases/ColorfulMotherboard.png" width=50% height=50%>
   <img src="https://github.com/hejcman/ECA-Art/blob/master/Assets/canvases/WhiteNoise.png" width=50% height=50%>
 </p>
 
