@@ -35,13 +35,27 @@ Download the relevant binary for your system from the [release page](https://git
 
 ## Gallery :framed_picture:
 
+### Square canvases
+
 <p align="center" float="left">
-<img src="https://github.com/hejcman/ECA-Art/blob/master/Assets/icon.png" width=50% height=50%>
-<img src="https://github.com/hejcman/ECA-Art/blob/master/Assets/icon2.png" width=50% height=50%>
-<img src="https://github.com/hejcman/ECA-Art/blob/master/Assets/icon3.png" width=50% height=50%>
-<img src="https://github.com/hejcman/ECA-Art/blob/master/Assets/icon4.png" width=50% height=50%>
-<img src="https://github.com/hejcman/ECA-Art/blob/master/Assets/icon5.png" width=50% height=50%>
-<img src="https://github.com/hejcman/ECA-Art/blob/master/Assets/icon6.png" width=50% height=50%>
-<img src="https://github.com/hejcman/ECA-Art/blob/master/Assets/icon7.png" width=50% height=50%>
+  <img src="https://github.com/hejcman/ECA-Art/blob/master/Assets/icon.png" width=50% height=50%>
+  <img src="https://github.com/hejcman/ECA-Art/blob/master/Assets/icon2.png" width=50% height=50%>
+  <img src="https://github.com/hejcman/ECA-Art/blob/master/Assets/icon3.png" width=50% height=50%>
+  <img src="https://github.com/hejcman/ECA-Art/blob/master/Assets/icon4.png" width=50% height=50%>
+  <img src="https://github.com/hejcman/ECA-Art/blob/master/Assets/icon5.png" width=50% height=50%>
+  <img src="https://github.com/hejcman/ECA-Art/blob/master/Assets/icon6.png" width=50% height=50%>
+  <img src="https://github.com/hejcman/ECA-Art/blob/master/Assets/icon7.png" width=50% height=50%>
 </p>
+
+### Other shapes
+
+
+<p align="center" float="left">
+  <img src="https://github.com/hejcman/ECA-Art/blob/master/Assets/canvases/BattlingChaos.png" width=50% height=50%>
+  <img src="https://github.com/hejcman/ECA-Art/blob/master/Assets/canvases/BleedingFractal.png" width=50% height=50%>
+  <img src="https://github.com/hejcman/ECA-Art/blob/master/Assets/canvases/Dungeon.png" width=50% height=50%>
+  <img src="https://github.com/hejcman/ECA-Art/blob/master/Assets/canvases/LeeningColumn.png" width=50% height=50%>
+  <img src="https://github.com/hejcman/ECA-Art/blob/master/Assets/canvases/WhiteNoise.png" width=50% height=50%>
+</p>
+
   
