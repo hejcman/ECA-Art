@@ -1,7 +1,9 @@
 # ECA-Art :art:
 Generating progressive art using Elementary Cellular Automata. Written in <img src=https://upload.wikimedia.org/wikipedia/commons/6/6a/Godot_icon.svg width=20 height=20> with :heart:.
 
-![]("https://github.com/hejcman/ECA-Art/blob/master/Assets/readme/recording.gif")
+<p align="center">
+  <img src="https://github.com/hejcman/ECA-Art/blob/master/Assets/readme/recording.gif?raw=true" width=400px>
+</p>
 
 ## Elementary Cellular Automata :brain:
 
