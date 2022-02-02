@@ -7,7 +7,7 @@ Generating progressive art using Elementary Cellular Automata. Written in <img s
 
 ## Elementary Cellular Automata :brain:
 
-[Elementary Cellular Automata (ECA)](https://en.wikipedia.org/wiki/Elementary_cellular_automaton) are one dimensional cellular automata, where the state of the cell is decided based on the state of its ancestors in the previous generation. ECA are usually designed as binary systems, where the cells are usually alive (1) or dead (0).
+[Elementary Cellular Automata (ECA)](https://en.wikipedia.org/wiki/Elementary_cellular_automaton) are one dimensional cellular automata, where the state of the cell is decided based on the state of its ancestors in the previous generation. ECA are usually designed as binary systems, where the cells are either alive (1) or dead (0).
 
 <p align="center">
   <img src="https://github.com/hejcman/ECA-Art/blob/master/Assets/readme/evolution.png" width=400px>
@@ -17,7 +17,7 @@ Since the new cells usually look at 3 cells in the previous generation, we must 
 
 ### What I do differently
 
-Rather than having cells be "alive" or "dead", it is possible to assign them any color from the RGB space. To decide whether the previous cell is alive or not, the cell color is converted to grayscale such that the cell "aliveness" is `a = (h + s + v)/3`, where HSV is the alternative representation of the RGB model. Whether the cell should be considered alive or not is then decided using the threshold, which ranges from 0 to 1, and is set to 0.5 by default. Moving it lower means more cells will be considered alive and vice versa.
+Rather than having cells be "alive" or "dead", it is possible to assign them any color from the RGB space. To decide whether the previous cell is alive or not, the cell color is converted to grayscale such that the cell "aliveness" is `a = (h + s + v)/3`, where HSV is the alternative representation of the RGB model. Whether the cell should be considered alive or not is then decided using a threshold slider, which ranges from 0 to 1, and is set to 0.5 by default. Moving it lower means more cells will be considered alive and vice versa.
 
 Furthermore, it is possible to decide the speed of the evolution of further cells, pause the automaton, or change all the colors and values in real time.
 
@@ -31,7 +31,7 @@ All this is done to allow a dynamic approach to the improvisation of art using t
 
 ## Installation :notebook_with_decorative_cover:
 
-TODO
+Download the relevant binary for your system from the [release page](https://github.com/hejcman/ECA-Art/releases).
 
 ## Gallery :framed_picture:
 
